@@ -33,4 +33,4 @@ const Breadcrumb = ({ product, theme }) => {
 };
 
 
-export default withTheme(Breadcrumb);
+export default withTheme()(Breadcrumb);

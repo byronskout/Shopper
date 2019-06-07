@@ -27,8 +27,7 @@
         {
           "name": "metadata",
           "options":[
-            {"label": "option 1"},
-            {"label": "option 2"}
+            {"label": "option 1"}
           ]
         }
       ]

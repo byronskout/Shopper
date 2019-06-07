@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
 import config from './assets/store_config';
+import { StripeProvider } from 'react-stripe-elements';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 import Banner from './components/ui/Banner';
 import Product from './components/product/Product';
 import Products from './components/product/Products';
-
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import ScrollToTop from './components/ui/ScrollToTop';
+import Landing from './components/Landing';
 
 const theme = createMuiTheme({
   palette: {
@@ -28,28 +29,51 @@ const theme = createMuiTheme({
   },
 });
 
-function App() {
+class App extends React.Component {
+
+  state = {};
+
+  componentDidMount() {
+    const slug = `${config.store_slug}_products`;
+    const items = JSON.parse(localStorage.getItem(slug));
+    this.setState({ quantity : items ? items.length : 0 })
+  }
+  updateNumber = (quantity) => {
+    this.setState({ quantity });
+  }
+  render() {
   return (
-    <div>
+  <StripeProvider apiKey={config.api_key}>
     <Router>
-    <Banner config={config}/>
-    <Route exact path="/product"
-                  render={(props) => <Products config={config} />}
-                />
-                { config.products.map((product,i) =>
-                    <Route exact key={`route${i}`}
-                      path={`/product/${product.url}`}
-                      render={(props) =>
-                        <Product product={product} config={config}
-                          updateNumber={this.updateNumber}
-                        />
-                      }
-                    />
-                  )
-                }
+     <ScrollToTop>
+      <MuiThemeProvider theme={theme}>
+      <div className={config.store_slug}>
+              <div className="bg" />
+              <Banner quantity={this.state.quantity} config={config} />
+              <Route exact path="/"
+                render={(props) => <Landing config={config} />}
+              />
+              <Route exact path="/product"
+                render={(props) => <Products config={config} />}
+              />
+              { config.products.map((product,i) =>
+                  <Route exact key={`route${i}`}
+                    path={`/product/${product.url}`}
+                    render={(props) =>
+                      <Product product={product} config={config}
+                        updateNumber={this.updateNumber}
+                      />
+                    }
+                  />
+                )
+              }
+              </div>
+          </MuiThemeProvider>
+      </ScrollToTop>
     </Router>
-    </div>
+   </StripeProvider>
   );
+ }
 }
 
 export default App;
