@@ -1,7 +1,7 @@
 {
-  "store_name": "Shopper",
+  "store_name": "My Awesome Store",
   "store_slug": "react-stripe-store",
-  "api_key": "{STRIPE_PUBLIC_KEY}",
+  "api_key": "{sk_test_G9aAOnxqxnQd7THfyJf3b5s100CR7d6lnW}",
   "colors": {
     "primary": {
       "main": "#FF6A64",
@@ -14,20 +14,61 @@
   },
   "products": [
     {
-      "name": "Super Cool Product",
-      "url": "url-for-product",
-      "stripe_id": "{STRIPE_PRODUCT_ID}",
-      "description": "What a great product!",
-      "photos": ["photo1.jpg","photo2.jpg"],
+      "name": "Clock",
+      "url": "prod_FDGSbDzg58sQe9",
+      "stripe_id": "prod_FDGSbDzg58sQe9",
+      "description": "A clock!",
+      "photos": ["Clock.jpg", "Clock2.jpg"],
       "details": [
         "These are details that get rendered as bullet points",
         "Useful for short + sweet info"
       ],
       "variants": [
         {
-          "name": "metadata",
+          "name": "Colour",
           "options":[
-            {"label": "option 1"}
+            {"label": "Black"},
+            {"label": "White"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sofa",
+      "url": "prod_FDVJsvINlgEIGf",
+      "stripe_id": "prod_FDVJsvINlgEIGf",
+      "description": "A comfy sofa!",
+      "photos": ["Sofa1.jpg", "Sofa2.jpg"],
+      "details": [
+        "These are details that get rendered as bullet points",
+        "Useful for short + sweet info"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Blue"},
+            {"label": "Beige"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cabinet",
+      "url": "prod_FDVdM06W0Jgsp7",
+      "stripe_id": "prod_FDVdM06W0Jgsp7",
+      "description": "A comfy sofa!",
+      "photos": ["Cabinet1.jpg", "Cabinet2.jpg"],
+      "details": [
+        "These are details that get rendered as bullet points",
+        "Useful for short + sweet info"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Blue"},
+            {"label": "Beige"}
           ]
         }
       ]

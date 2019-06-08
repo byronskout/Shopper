@@ -38,7 +38,7 @@ class Product extends Component {
   componentDidMount() {
     if (!this.props.product.stripe_id) return;
 
-    fetch('/product-info/'+this.props.product.stripe_id)
+    fetch('/product-info/'+ this.props.product.url)
       .then(res => res.json())
       .then(product => {
         if (product.data.length > 1) {
@@ -140,6 +140,4 @@ class Product extends Component {
     );
   }
 };
-
-
 export default withWidth()(withRouter(Product));

@@ -119,5 +119,4 @@ class ProductDetails extends Component {
     );
   }
 };
-
 export default ProductDetails;

@@ -98,5 +98,4 @@ class ProductList extends Component {
     );
   }
 };
-
 export default withTheme()(ProductList);

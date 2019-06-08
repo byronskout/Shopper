@@ -29,8 +29,8 @@ if (app.get('env') === 'production') {
 app.use(session(sess))
 
 if (result.error) throw result.error;
-require( __dirname + '/orders.js');
-require( __dirname + '/admin.js');
+// require( __dirname + '/orders.js');
+// require( __dirname + '/admin.js');
 
 app.use(bodyParser.json());
 
