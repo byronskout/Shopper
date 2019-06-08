@@ -140,4 +140,5 @@ class Product extends Component {
     );
   }
 };
+
 export default withWidth()(withRouter(Product));
