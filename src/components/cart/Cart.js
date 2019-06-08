@@ -23,6 +23,14 @@ const Subtotal = styled.div`
   }
 `
 
+const Wrapper = styled.div`
+  padding: 40px;
+  min-height: 500px;
+  @media (max-width: 650px) {
+    padding: 20px;
+  }
+`
+
 class Cart extends Component {
   constructor(props) {
     super(props)
@@ -39,7 +47,25 @@ class Cart extends Component {
     })
   }
 
+  updateItems = (items) => {
+    this.setState({ items })
+    const slug = `${this.props.config.store_slug}_products`
+    localStorage.setItem(slug, JSON.stringify(items))
+  }
+  removeItem = (index) => {
+    let items = [...this.state.items]
+    items.splice(index,1)
+    this.props.updateNumber(items.length)
+    this.updateItems(items)
+  }
+  updateCount = (index, value) => {
+    let items = [...this.state.items]
+    items[index].quantity = value
+    this.updateItems(items)
+  }
+
   render() {
+    
     let totalPrice;
     if (this.state.items.length) {
       totalPrice = this.state.items
@@ -50,12 +76,14 @@ class Cart extends Component {
     return (
       <PageWrapper>
         <Paper>
-
+        <Wrapper>
           <h2 style={{ marginTop: 0, fontWeight: 600 }}>Cart</h2>
             { this.state.items.length > 0 &&
               <div>
                 <CartTable
                   items={this.state.items}
+                  updateCount={this.updateCount}
+                  removeItem={this.removeItem}
                   config={this.props.config}
                 />
                 <RightSide>
@@ -72,7 +100,7 @@ class Cart extends Component {
             { this.state.items.length === 0 &&
               <p>You cart is empty.</p>
             }
-
+          </Wrapper>
         </Paper>
       </PageWrapper>
     );

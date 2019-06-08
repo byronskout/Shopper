@@ -28,7 +28,7 @@ const Remove = styled.span`
   opacity: .5;
   transition: opacity .5s;
   &:hover { opacity: 1; }
-`;
+`
 
 class CartTable extends Component {
 
