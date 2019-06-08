@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+header.MuiAppBar-colorSecondary-44 {
+  background-color: #6b9ad6;
+}
+
+div.sc-cSHVUG.kyGaDX {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #9abdea;
+}

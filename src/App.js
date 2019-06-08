@@ -9,6 +9,7 @@ import Product from './components/product/Product';
 import Products from './components/product/Products';
 import ScrollToTop from './components/ui/ScrollToTop';
 import Landing from './components/Landing';
+import Cart from './components/cart/Cart';
 
 const theme = createMuiTheme({
   palette: {
@@ -67,6 +68,9 @@ class App extends React.Component {
                   />
                 )
               }
+              <Route exact path="/cart"
+                  render={(props) => <Cart config={config} updateNumber={this.updateNumber} />}
+                />
               </div>
           </MuiThemeProvider>
       </ScrollToTop>

@@ -5,8 +5,33 @@ import { Link } from 'react-router-dom';
 import { withTheme } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
+const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+
+  thead > tr > th {
+    font-weight: normal;
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  tbody > tr > td {
+    padding: 10px 4px;
+    border-bottom: 1px solid #ddd;
+  }
+`
+
+const Remove = styled.span`
+  cursor: pointer;
+  opacity: .5;
+  transition: opacity .5s;
+  &:hover { opacity: 1; }
+`;
+
 class CartTable extends Component {
-  
+
   render() {
     return (
       <Table>
@@ -28,15 +53,7 @@ class CartTable extends Component {
 
             return (<tr key={`cart${i}`}>
               <td>
-                <Flex>
-                  <Image img={d.img} />
-                  <Title>
-                    <Name underline={this.props.theme.palette.primary.main}>
-                      <Link to={d.url ? d.url : "/"}>{d.name}</Link>
-                    </Name>
-                    <Attrs>{attrs}</Attrs>
-                  </Title>
-                </Flex>
+
               </td>
               <td>
                 <TextField
