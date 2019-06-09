@@ -1,6 +1,6 @@
 {
-  "store_name": "My Awesome Store",
-  "store_slug": "react-stripe-store",
+  "store_name": "UU",
+  "store_slug": "store",
   "api_key": "{sk_test_G9aAOnxqxnQd7THfyJf3b5s100CR7d6lnW}",
   "colors": {
     "primary": {
@@ -20,15 +20,16 @@
       "description": "A clock!",
       "photos": ["Clock.jpg", "Clock2.jpg"],
       "details": [
-        "These are details that get rendered as bullet points",
-        "Useful for short + sweet info"
+        "Mars-shaped clock that easily hangs on any wall from Karlsson",
+        "Features a glass construction",
+        "Battery powered"
       ],
       "variants": [
         {
           "name": "Colour",
           "options":[
-            {"label": "Black"},
-            {"label": "White"}
+            {"label": "Bright"},
+            {"label": "Grey"}
           ]
         }
       ]
@@ -40,8 +41,10 @@
       "description": "A comfy sofa!",
       "photos": ["Sofa1.jpg", "Sofa2.jpg"],
       "details": [
-        "These are details that get rendered as bullet points",
-        "Useful for short + sweet info"
+        "Chic, exclusive sofa brings modern lines to your space with a blooming touch",
+        "Comfy sofa with a padded silhouette featuring 3 back cushions",
+        "Topped in a luxe faux leather",
+        "Assembly required"
       ],
       "variants": [
         {
@@ -60,8 +63,8 @@
       "description": "A comfy sofa!",
       "photos": ["Cabinet1.jpg", "Cabinet2.jpg"],
       "details": [
-        "These are details that get rendered as bullet points",
-        "Useful for short + sweet info"
+        "Storage cabinet made from gmelina wood in a natural woven look we love",
+        "Swinging door cabinet features 3 shelves and hanging bar inside for organizing clothes, shoes + so much more"
       ],
       "variants": [
         {

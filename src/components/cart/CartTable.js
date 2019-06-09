@@ -1,8 +1,8 @@
-
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { withTheme } from '@material-ui/core/styles';
+
 import TextField from '@material-ui/core/TextField';
 
 const Table = styled.table`
@@ -21,17 +21,49 @@ const Table = styled.table`
     padding: 10px 4px;
     border-bottom: 1px solid #ddd;
   }
-`
-
+`;
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Image = styled.div`
+  background-image: url(${props => props.img});
+  width: 125px;
+  height: 125px;
+  background-size: cover;
+  background-position: 50%;
+  @media (max-width: 650px) {
+    width: 62px;
+    height: 62px;
+  }
+`;
 const Remove = styled.span`
   cursor: pointer;
   opacity: .5;
   transition: opacity .5s;
   &:hover { opacity: 1; }
-`
+`;
+const Title = styled.div`
+  margin-left: 30px;
+  @media (max-width: 650px) {
+    margin-left: 10px;
+  }
+`;
+const Name = styled.div`
+  margin-bottom: 10px;
+  font-size: 16px;
+  > a {
+    color: black;
+    text-decoration-color: ${props => props.underline};
+  }
+`;
+const Attrs = styled.div`
+  color: #888;
+  font-size: 12px;
+  text-transform: capitalize;
+`;
 
 class CartTable extends Component {
-
   render() {
     return (
       <Table>
@@ -53,7 +85,15 @@ class CartTable extends Component {
 
             return (<tr key={`cart${i}`}>
               <td>
-
+                <Flex>
+                  <Image img={d.img} />
+                  <Title>
+                    <Name underline={this.props.theme.palette.primary.main}>
+                      <Link to={d.url ? d.url : "/"}>{d.name}</Link>
+                    </Name>
+                    <Attrs>{attrs}</Attrs>
+                  </Title>
+                </Flex>
               </td>
               <td>
                 <TextField
@@ -68,7 +108,7 @@ class CartTable extends Component {
                 />
               </td>
               <td>
-                ${(d.quantity*d.price).toFixed(2)}
+                £{(d.quantity*d.price).toFixed(2)}
               </td>
               <td>
                 <Remove onClick={() => this.props.removeItem(i)}>✕</Remove>

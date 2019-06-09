@@ -26,7 +26,9 @@ class Landing extends Component {
         <Paper style={{ padding: "40px" }}>
           <Hero>
             <div style={{ display: "inline-block", maxWidth: "80%"}}>
-              <p>intro your site here!</p>
+              <p>NEW ARRIVALS!</p>
+              <p>100'S OF STYLES JUST ADDED</p>
+              <p>Free Delivery & Returns</p>
             </div>
           </Hero>
           <Divider style={{ margin: "40px 0" }}/>
