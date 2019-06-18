@@ -5,8 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 const Flex = styled.div`
   display: flex;
-`
-
+`;
 const BigNum = styled.div`
   border: 1px solid #888;
   border-width: ${props => (props.active || props.complete) ? 0 : "1px"};
@@ -27,8 +26,7 @@ const BigNum = styled.div`
   justify-content: center;
   font-size: 18px;
   line-height: 30px;
-`
-
+`;
 const Title = styled.div`
   flex: 1;
   margin-left: 10px;
@@ -40,7 +38,7 @@ const Title = styled.div`
     else if (props.complete) return "#555";
     return "#888";
   }};
-`
+`;
 
 const CheckoutHeader = ({ pane, text, currentPane, changePane, theme }) => {
   return (
