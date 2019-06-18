@@ -108,7 +108,7 @@ class CartTable extends Component {
                 />
               </td>
               <td>
-                £{(d.quantity*d.price).toFixed(2)}
+                ${(d.quantity*d.price).toFixed(2)}
               </td>
               <td>
                 <Remove onClick={() => this.props.removeItem(i)}>✕</Remove>

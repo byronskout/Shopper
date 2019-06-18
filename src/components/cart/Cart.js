@@ -66,7 +66,7 @@ class Cart extends Component {
       totalPrice = this.state.items
         .map(i => (i.quantity*i.price))
         .reduce((a,b) => a+Number(b))
-        .toLocaleString('en-US', { style: 'currency', currency: 'GBP' })
+        .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
     }
     return (
       <PageWrapper>
@@ -92,13 +92,13 @@ class Cart extends Component {
               </div>
             }
             { this.state.items.length === 0 &&
-              <p>Your cart is empty.</p>
+              <p>Hmmmm, there's nothing in your cart yet.</p>
             }
           </Wrapper>
         </Paper>
       </PageWrapper>
     );
   }
-}
+};
 
 export default Cart;
