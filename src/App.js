@@ -7,6 +7,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Banner from './components/ui/Banner';
 import Product from './components/product/Product';
 import Products from './components/product/Products';
+import Checkout from './components/checkout/Checkout';
 import ScrollToTop from './components/ui/ScrollToTop';
 import Landing from './components/Landing';
 import Cart from './components/cart/Cart';
@@ -70,6 +71,9 @@ class App extends React.Component {
               }
               <Route exact path="/cart"
                   render={(props) => <Cart config={config} updateNumber={this.updateNumber} />}
+                />
+                <Route exact path="/checkout"
+                  render={(props) => <Checkout config={config} />}
                 />
               </div>
           </MuiThemeProvider>
