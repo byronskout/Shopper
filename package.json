@@ -34,7 +34,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js",
-    "heroku-postbuild": "cd shopper && npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
   },
   "proxy": "http://localhost:5000"
 }
