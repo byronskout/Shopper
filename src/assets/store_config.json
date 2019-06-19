@@ -141,7 +141,7 @@
       "url": "prod_FHkSIXFLqPoU3K",
       "stripe_id": "prod_FHkSIXFLqPoU3K",
       "description": "Not your everyday bookshelf!",
-      "photos": ["bookshelf.jpg", "bookshelf2.jpg"],
+      "photos": ["bookshelf2.jpg", "bookshelf.jpg"],
       "details": [
         "Like a holiday for your treasures, this rattan bookshelf from our exclusive Shia collection is a sunny piece we love",
         "With interwoven rattan strands along top arch + providing the base for each of the four shelves",
@@ -182,7 +182,7 @@
       "url": "prod_FHkbR6kW8P14Hw",
       "stripe_id": "prod_FHkbR6kW8P14Hw",
       "description": "A shelving unit!",
-      "photos": ["unit2.jpg", "unit.jpg"],
+      "photos": ["unit.jpg", "unit2.jpg"],
       "details": [
         "Declutter any space while adding a chic touch with this large shelving unit",
         "Features an oval construction with a four-shelf setup",
