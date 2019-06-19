@@ -81,7 +81,7 @@
       "url": "prod_FHk6k7NwuHsk28",
       "stripe_id": "prod_FHk6k7NwuHsk28",
       "description": "Record Stand Shelf!",
-      "photos": ["stand.jpeg", "stand2.jpeg"],
+      "photos": ["stand.jpg", "stand2.jpg"],
       "details": [
         "Keep your vinyl LPs nice + organised courtesy of this sleek storage system in a sweet vintage-inspired design",
         "Features 2 flat shelves for display, a bottom record rack + colour pop finish"
@@ -182,7 +182,7 @@
       "url": "prod_FHkbR6kW8P14Hw",
       "stripe_id": "prod_FHkbR6kW8P14Hw",
       "description": "A shelving unit!",
-      "photos": ["unit.jpg", "unit2.jpg"],
+      "photos": ["unit2.jpg", "unit.jpg"],
       "details": [
         "Declutter any space while adding a chic touch with this large shelving unit",
         "Features an oval construction with a four-shelf setup",
