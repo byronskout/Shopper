@@ -39,7 +39,7 @@
       "url": "prod_FDVJsvINlgEIGf",
       "stripe_id": "prod_FDVJsvINlgEIGf",
       "description": "A comfy sofa!",
-      "price": "20"
+      "price": "20",
       "photos": ["Sofa1.jpg", "Sofa2.jpg"],
       "details": [
         "Chic, exclusive sofa brings modern lines to your space with a blooming touch",
