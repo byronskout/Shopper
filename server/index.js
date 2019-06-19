@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const app = module.exports = express();
+process.env.NODE_ENV = 'development'
 
 app.use(helmet());
 app.use(cookieParser());
