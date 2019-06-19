@@ -61,7 +61,7 @@
       "url": "prod_FDVdM06W0Jgsp7",
       "stripe_id": "prod_FDVdM06W0Jgsp7",
       "description": "A comfy sofa!",
-      "photos": ["Cabinet1.jpg", "Cabinet2.jpg"],
+      "photos": ["cabinet1.jpg", "cabinet2.jpg"],
       "details": [
         "Storage cabinet made from gmelina wood in a natural woven look we love",
         "Swinging door cabinet features 3 shelves and hanging bar inside for organizing clothes, shoes + so much more"
@@ -70,8 +70,130 @@
         {
           "name": "Colour",
           "options":[
+            {"label": "Dark Oak"},
+            {"label": "Bright Oak"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vinyl Record Stand Shelf",
+      "url": "prod_FHk6k7NwuHsk28",
+      "stripe_id": "prod_FHk6k7NwuHsk28",
+      "description": "Record Stand Shelf!",
+      "photos": ["stand.jpeg", "stand2.jpeg"],
+      "details": [
+        "Keep your vinyl LPs nice + organised courtesy of this sleek storage system in a sweet vintage-inspired design",
+        "Features 2 flat shelves for display, a bottom record rack + colour pop finish"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Black"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pierce Chair",
+      "url": "prod_FHkNpfmyPKeiKR",
+      "stripe_id": "prod_FHkNpfmyPKeiKR",
+      "description": "Artfully crafted wicker chair!",
+      "photos": ["chair2.jpg", "chair.jpg"],
+      "details": [
+        "Artfully crafted from interwoven strands of rattan in a rounded shape, this wicker chair is the ultimate, perfect reading nook",
+        "With an hourglass silhouette and rounded seat, this chair lends a uniquely vintage look to any space"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Bright"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rohini Cushion",
+      "url": "prod_FHkMthOQNe2vh7",
+      "stripe_id": "prod_FHkMthOQNe2vh7",
+      "description": "Cushion cushion!",
+      "photos": ["cushion.jpg", "cushion2.jpg"],
+      "details": [
+        "Soft + cosy overstuffed cushion with tufted accents we love",
+        "Please note, this cushion does not fit a standard twin bed",
+        "Pair with any of our daybeds (sold separately), use it to top off a bench or get a few and stack them for a comfy reading nook!"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
             {"label": "Blue"},
-            {"label": "Beige"}
+            {"label": "Grey"},
+            {"label": "Yellow"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shia Bookshelf",
+      "url": "prod_FHkSIXFLqPoU3K",
+      "stripe_id": "prod_FHkSIXFLqPoU3K",
+      "description": "Not your everyday bookshelf!",
+      "photos": ["bookshelf.jpg", "bookshelf2.jpg"],
+      "details": [
+        "Like a holiday for your treasures, this rattan bookshelf from our exclusive Shia collection is a sunny piece we love",
+        "With interwoven rattan strands along top arch + providing the base for each of the four shelves",
+        "Featuring rounded edges all over"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Dark Oak"},
+            {"label": "Light Oak"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Marble Table",
+      "url": "prod_FHkX5I1SqBwPzv",
+      "stripe_id": "prod_FHkX5I1SqBwPzv",
+      "description": "A marble table!",
+      "photos": ["table2.jpg", "table.jpg"],
+      "details": [
+        "Boho table with a marble-like top that will accentuate any space",
+        "Features a circular shape",
+        "Finished with durable hairpin-inspired support legs"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Marble"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Oval Shelving Unit",
+      "url": "prod_FHkbR6kW8P14Hw",
+      "stripe_id": "prod_FHkbR6kW8P14Hw",
+      "description": "A shelving unit!",
+      "photos": ["unit.jpg", "unit2.jpg"],
+      "details": [
+        "Declutter any space while adding a chic touch with this large shelving unit",
+        "Features an oval construction with a four-shelf setup",
+        "Perfect for storing books, pictures of loved ones + more!"
+      ],
+      "variants": [
+        {
+          "name": "Colour",
+          "options":[
+            {"label": "Black"},
+            {"label": "White"}
           ]
         }
       ]
