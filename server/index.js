@@ -8,8 +8,6 @@ const path = require('path');
 const stripe = require("stripe")(process.env.STRIPE_KEY);
 const app = module.exports = express();
 
-const port = process.env.PORT || 5000;
-
 app.use(helmet());
 app.use(cookieParser());
 
@@ -56,6 +54,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
 });
 
-app.listen(port, function() {
-  console.log("Listening on port 5000!");
-});
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+  console.log(`Mixing it up on port ${PORT}`)
+})
