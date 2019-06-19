@@ -37,7 +37,7 @@ class CartSmall extends Component {
       price = this.props.items
         .map(i => i.quantity*i.price)
         .reduce((a,b) => a+Number(b))
-        .toLocaleString('en-US', { style: 'currency', currency: 'USD' })
+        .toLocaleString('en-UK', { style: 'currency', currency: 'GBP' })
     }
     return (
       <Wrapper>

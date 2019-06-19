@@ -73,7 +73,7 @@ class ProductList extends Component {
             let min = Math.min(...skuList),
               max = Math.max(...skuList);
             if (min === max) product["price"] = skuList[0];
-            else product["price"] = `${min} - $${max}`;
+            else product["price"] = `${min} - £${max}`;
           }
         })
         this.setState({ products })
