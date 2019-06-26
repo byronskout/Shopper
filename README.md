@@ -1,7 +1,5 @@
 <h1><strong>Shopper</strong></h1>
 
-<a href="url">Check out the demo!</a>
-
 Written in React, served up with Express, and integrated with Stripe.
 
 <strong>Reminder: You can pay for your order, but no orders will be shipped!</strong>
