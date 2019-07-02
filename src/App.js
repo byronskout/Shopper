@@ -11,6 +11,7 @@ import Checkout from './components/checkout/Checkout';
 import ScrollToTop from './components/ui/ScrollToTop';
 import Landing from './components/Landing';
 import Cart from './components/cart/Cart';
+import Footer from './Footer';
 
 const theme = createMuiTheme({
   palette: {
@@ -75,6 +76,7 @@ class App extends React.Component {
                 <Route exact path="/checkout"
                   render={(props) => <Checkout config={config} />}
                 />
+                <Footer/>
               </div>
           </MuiThemeProvider>
       </ScrollToTop>
