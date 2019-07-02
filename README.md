@@ -1,8 +1,18 @@
-<h1><strong>Shopper</strong></h1>
+# Shopper
 
-<a href="url">Check out the demo!</a>
+<h2>Features:</h2>
 
-Written in React, served up with Express, and integrated with Stripe.
+* Served up with Express
+
+* Products are created in Stripe Dashboard
+
+* Fetching products in the frontend using Stripe API
+
+* Stripe payments integrated for checkout
+
+* Using React for the frontend
+
+* Heroku for deployment
 
 <strong>Reminder: You can pay for your order, but no orders will be shipped!</strong>
 
