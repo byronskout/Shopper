@@ -12,6 +12,8 @@
 
 * Using React for the frontend
 
+* Heroku for deployment
+
 <strong>Reminder: You can pay for your order, but no orders will be shipped!</strong>
 
 <h3>Styling:</h3>
