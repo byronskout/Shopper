@@ -18,4 +18,4 @@
 
 <h3>Styling:</h3>
 
-Material-UI and styled-components for the design.
+CSS, styled-components, Material UI for the styling.
