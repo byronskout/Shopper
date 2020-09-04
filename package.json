@@ -16,7 +16,7 @@
     "express-session": "^1.15.6",
     "geojson-dissolve": "^3.1.0",
     "googleapis": "27",
-    "handlebars": "^4.3.0",
+    "handlebars": "^4.5.3",
     "helmet": "^3.12.1",
     "less": "^3.9.0",
     "nodemailer": "^4.6.7",
